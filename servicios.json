@@ -1,0 +1,60 @@
+[{
+    "Ecommerce": [
+        {
+            "id" : 1,
+            "servicio" : "Ecommerce",
+            "Precio" : "$20,000 MXN"
+        }
+        ,
+        {
+            "id" : 2,
+            "servicio" : "Ecommerce",
+            "Precio" : "$22,000 MXN"
+        }
+        ,
+        {
+            "id" : 3,
+            "servicio" : "Ecommerce",
+            "Precio" : "$24,000 MXN"
+        }
+    ],
+
+    "Galeria": [
+        {
+            "id" : 1,
+            "servicio" : "Ecommerce",
+            "Precio" : "$5,000 MXN"
+        }
+        ,
+        {
+            "id" : 2,
+            "servicio" : "Ecommerce",
+            "Precio" : "$6,000 MXN"
+        }
+        ,
+        {
+            "id" : 3,
+            "servicio" : "Ecommerce",
+            "Precio" : "$7,000 MXN"
+        }
+    ],
+    "Contacto": [
+        {
+            "id" : 1,
+            "servicio" : "Contacto",
+            "Precio" : "$10,000 MXN"
+        }
+        ,
+        {
+            "id" : 2,
+            "servicio" : "Contacto",
+            "Precio" : "$12,000 MXN"
+        }
+        ,
+        {
+            "id" : 3,
+            "servicio" : "Contaccto",
+            "Precio" : "$14,000 MXN"
+        }
+    ]
+}]

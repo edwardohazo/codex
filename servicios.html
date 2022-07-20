@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" id="html">
+<head>
+    <title>CODEX | Inicio</title>
+    <!-- <base href="http://localhost/codexdesign/"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Ir Arriba -->
+  <div class="go-top">
+    <span class="fas fa-angle-up"></span>
+  </div>
+
+    <!-- Menu de Navegacion -->
+    <header id="header">
+    <nav class="menu">
+     <div class="logo-box">
+       <h1><a href="index.html">CODEX <small>Diseño web</small></a></h1>
+       <span class="btn-menu"><i class="fas fa-bars"></i></span>
+     </div>
+     
+     <div class="list-container">
+        <ul class="lists">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="servicios.html" class="active">Servicios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+     </div>
+    </nav>
+ 
+    <!-- Imagen Header -->
+    <div class="img-header">
+     <div class="welcome">
+       <h1>Bienvenidos Artistas Web</h1>
+       <hr>
+       <p>Agencia de Diseño y Desarrollo web</p>
+       <button id="abajo">Ver abajo</button>
+     </div>       
+    </div>
+    
+    <div class="skew-abajo"></div>
+
+    </header>
+
+    <main class="contenedor">
+        <h1>Servicios</h1>
+        <div class="camisa">
+            <img src="uploads/img-1.jpg" alt="imagen del producto" id="imagen-servicio">
+            <div class="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur voluptatum maiores provident nihil incidunt esse, obcaecati animi magnam voluptatem ipsam quasi? Expedita at, aliquid ducimus nesciunt veniam eaque temporibus.</p>
+                <form method="get" action="" class="formulario" id="formulario">
+                    <select class="formulario__campo" name="servicio" id="selectService">
+                        <option selected disabled>Seleccionar servicio</option>
+                        <option id="option1" value="Galería">Galería</option>
+                        <option id="option2" value="Sitio-de-contacto">Sitio de contacto</option>
+                        <option id="option3" value="E-commerce">E-commerce</option>
+                    </select>
+                    <label>Servicio</label>
+                    <input name="servicio" type="text" id="input1" disabled>
+                    <label>Paquete</label>
+                    <select class="formulario__campo2" name="paquete" id="input3">
+                      <option selected disabled>Seleccionar paquete</option>
+                      <option id="paquete1" value="1">1</option>
+                      <option id="paquete2" value="2">2</option>
+                      <option id="paquete3" value="3">3</option>
+                    </select>
+                    <label>Precio</label>
+                    <input name="precio" type="text" id="input2">
+
+                    <input type="submit" class="formulario__submit">
+                </form>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+ <!-- Footer -->
+ <footer class="footer">
+   <div class="skew-arriba"></div>
+  <div class="deg-footer"></div>
+ 
+  <div class="ejeZfooter">
+  <div class="footer-content">
+   <div class="footer-title">
+     <h2>Formulario de Contacto</h2>
+     <hr>
+   </div>
+
+   <div class="formulario-content">
+     <form id="formulario">
+        <label for="user">Nombre:</label>
+        <input type="text" id="user" name="user" placeholder="Ingresa tu Nombre">
+   
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu Correo Electronico">
+   
+        <label for="message">Escribe tu mensaje</label>
+        <textarea name="menssage" id="message"></textarea>
+   
+        <div class="send"><button>Enviar</button></div>
+   
+        <div class="mensaje-form">
+          <p>Escribenos un mensaje, con gusto tendras una respuesta de parte de nosotros en muy poco tiempo.</p>
+        </div>
+     </form>
+   </div>
+
+   <div class="footer-text">
+     <p>&copy; Artistas Web - 2019 | Todos los derechos reservados.</p>
+   </div>
+  
+  </div>
+</div>
+                          <!-- <script>
+                          
+                            const select = document.getElementById("selectService");
+                          
+                            let xhr;
+                            xhr = new XMLHttpRequest();    
+                            xhr.open("GET", "marvel.php");
+
+                            xhr.addEventListener("load", (data) => {
+
+                                  let jsonObject = JSON.parse(data.target.response);
+                                  let fragmento = document.createDocumentFragment();
+                            
+                                  for (const heroes of jsonObject) {
+                                    console.log(heroes.Name);
+                                    const option = document.createElement('OPTION');
+                                    option.setAttribute("value", heroes.ID);
+                                    option.textContent = heroes.Name;
+                                    fragmento.appendChild(option);
+                                  }
+                                
+                                  select.appendChild(fragmento);
+                                
+                            });
+
+                            xhr.send();
+                          </script> -->
+ </footer>
+
+<!-- Scripts -->
+<script src="https://kit.fontawesome.com/35db202371.js"></script>
+<script src="script.js"></script>
+<script src="cotizador.js"></script>
+</body>
+</html>
